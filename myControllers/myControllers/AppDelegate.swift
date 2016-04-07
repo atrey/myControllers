@@ -15,7 +15,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        let mainController = ViewController()
+        let navigationController = UINavigationController(rootViewController: mainController)
+        
+        
+        mainController.title = "ViewController"
+        navigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .TopRated, tag: 0)
+        
+        
+        
+        let messagesController = MessagesViewController()
+        let messagesNavigationController = UINavigationController(rootViewController: messagesController)
+        messagesController.title = "Messages Controller"
+        messagesNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .Contacts, tag: 0)
+        
+        let friendsController = FriendsViewController()
+        let friendsNavigationController = UINavigationController(rootViewController: friendsController)
+        friendsController.title = "Friends Controller"
+        friendsNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .History, tag: 0)
+        
+        let profileController = ProfileViewController()
+        let profileNavigationController = UINavigationController(rootViewController: profileController)
+        profileController.title = "Profile Controller"
+        profileNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .Search, tag: 0)
+        
+        
+        
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [navigationController, messagesNavigationController, friendsNavigationController, profileNavigationController    ]
+        
+        
+    
+        
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
