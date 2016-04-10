@@ -11,6 +11,7 @@
 		E9452C921CB696EF004B2309 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C911CB696EF004B2309 /* MessagesViewController.swift */; };
 		E9452C941CB696F9004B2309 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C931CB696F9004B2309 /* FriendsViewController.swift */; };
 		E9452C961CB69701004B2309 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C951CB69701004B2309 /* ProfileViewController.swift */; };
+		E9452C981CBAD766004B2309 /* EventInfoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C971CBAD766004B2309 /* EventInfoModal.swift */; };
 		E9D38C9E1CB687EA00DBC998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D38C9D1CB687EA00DBC998 /* AppDelegate.swift */; };
 		E9D38CA01CB687EA00DBC998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D38C9F1CB687EA00DBC998 /* ViewController.swift */; };
 		E9D38CA31CB687EA00DBC998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D38CA11CB687EA00DBC998 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		E9452C911CB696EF004B2309 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		E9452C931CB696F9004B2309 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E9452C951CB69701004B2309 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E9452C971CBAD766004B2309 /* EventInfoModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoModal.swift; sourceTree = "<group>"; };
 		E9D38C9A1CB687EA00DBC998 /* myControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D38C9D1CB687EA00DBC998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D38C9F1CB687EA00DBC998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				E9D38C9D1CB687EA00DBC998 /* AppDelegate.swift */,
 				E9D38C9F1CB687EA00DBC998 /* ViewController.swift */,
+				E9452C971CBAD766004B2309 /* EventInfoModal.swift */,
 				E9452C911CB696EF004B2309 /* MessagesViewController.swift */,
 				E9452C931CB696F9004B2309 /* FriendsViewController.swift */,
 				E9452C951CB69701004B2309 /* ProfileViewController.swift */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9452C981CBAD766004B2309 /* EventInfoModal.swift in Sources */,
 				E9452C941CB696F9004B2309 /* FriendsViewController.swift in Sources */,
 				E9452C921CB696EF004B2309 /* MessagesViewController.swift in Sources */,
 				E9452C961CB69701004B2309 /* ProfileViewController.swift in Sources */,

@@ -19,8 +19,8 @@ class MessagesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sendButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Camera, target: self, action: Selector("sendMail"))
-        self.navigationItem.rightBarButtonItem = sendButton
+//        let sendButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Camera, target: self, action: Selector("sendMail"))
+//        self.navigationItem.rightBarButtonItem = sendButton
     }
     
     

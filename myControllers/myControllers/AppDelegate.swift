@@ -20,26 +20,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainController = ViewController()
         let navigationController = UINavigationController(rootViewController: mainController)
         
-        
-        mainController.title = "ViewController"
-        navigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .TopRated, tag: 0)
-        
+        mainController.title = "Events"
+        navigationController.tabBarItem = UITabBarItem(title: "Events", image: UIImage(named: "calendar"), tag: 0)
+        UINavigationBar.appearance().translucent = false
         
         
         let messagesController = MessagesViewController()
         let messagesNavigationController = UINavigationController(rootViewController: messagesController)
-        messagesController.title = "Messages Controller"
-        messagesNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .Contacts, tag: 0)
+        messagesController.title = "Messages"
+        messagesNavigationController.tabBarItem = UITabBarItem(title: "Messages", image: UIImage(named: "message"), tag: 0)
         
         let friendsController = FriendsViewController()
         let friendsNavigationController = UINavigationController(rootViewController: friendsController)
-        friendsController.title = "Friends Controller"
-        friendsNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .History, tag: 0)
+        friendsController.title = "Friends"
+        friendsNavigationController.tabBarItem = UITabBarItem(title: "Friends", image: UIImage(named: "usergroup"), tag: 0)
         
         let profileController = ProfileViewController()
         let profileNavigationController = UINavigationController(rootViewController: profileController)
-        profileController.title = "Profile Controller"
-        profileNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .Search, tag: 0)
+        profileController.title = "Profile"
+        profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "contacts"), tag: 0)
         
         
         
@@ -48,7 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.viewControllers = [navigationController, messagesNavigationController, friendsNavigationController, profileNavigationController    ]
         
         
-    
         
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
