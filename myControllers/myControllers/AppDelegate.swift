@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         mainController.title = "Events"
         navigationController.tabBarItem = UITabBarItem(title: "Events", image: UIImage(named: "calendar"), tag: 0)
+        
+        
         UINavigationBar.appearance().translucent = false
         
         
@@ -44,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [navigationController, messagesNavigationController, friendsNavigationController, profileNavigationController    ]
+        tabBarController.viewControllers = [navigationController, profileNavigationController    ]
         
         
         

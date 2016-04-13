@@ -105,16 +105,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let addEvent = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(ViewController.addEvent))
+        addEvent.tintColor = UIColor.whiteColor()
         
-        //let sendButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Camera, target: self, action: #selector(ViewController.sendMail))
-        //self.navigationItem.leftBarButtonItem = sendButton
+        
+        //set backbutton white
+        self.navigationController?.navigationBar.tintColor = .whiteColor()
+        
+        //add right navigation item - in our case - addEvent
+        self.navigationItem.rightBarButtonItem = addEvent
+        
+        
         navigationController?.navigationBar.barTintColor = UIColor(red: 41/255.0, green: 128/255.0, blue: 185/255.0, alpha: 1.0)
-        //sendButton.tintColor = UIColor.whiteColor()
+        
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.barStyle = UIBarStyle.Default
-        
-        self.moreInfoAboutEvent.addTarget(self, action: Selector("showEventInfo"), forControlEvents: .TouchUpInside)
+        self.moreInfoAboutEvent.addTarget(self, action: #selector(ViewController.showEventInfo), forControlEvents: .TouchUpInside)
     
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     
     }
     
@@ -139,10 +149,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    
-//    func sendMail() {
-//        print("Send Mail")
-//    }
+    
+    func addEvent() {
+        self.navigationController?.pushViewController(AddEventController(), animated: true)
+    }
 
 
 }
