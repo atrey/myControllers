@@ -5,4 +5,11 @@ use_frameworks!
 
 target 'myControllers' do
 	pod 'SnapKit', '~> 0.20'
+	pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'Curry'
+    pod 'Argo'
+    pod 'Alamofire'
+    pod 'SDWebImage'
+    pod 'SVProgressHUD'
+    pod 'Firebase'
 end

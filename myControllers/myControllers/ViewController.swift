@@ -7,10 +7,23 @@
 //
 
 import UIKit
-import SnapKit
+import SVProgressHUD
+import Argo
+import SDWebImage
+import Alamofire
+import Firebase
+
+private let cellId = "cellId"
 
 class ViewController: UIViewController {
     
+    var people: [Person] = [] {
+        didSet {
+            
+        }
+    }
+    
+        
     weak var moreInfoAboutEvent: UIButton!
     
     
@@ -22,6 +35,8 @@ class ViewController: UIViewController {
         super.init(coder: aDecoder)
         // fatalError("init(coder:) has not been implemented")
     }
+    
+    
     
     override func loadView() {
         
@@ -99,6 +114,8 @@ class ViewController: UIViewController {
             make.centerX.equalTo(eventList)
             make.bottom.equalTo(eventList.snp_bottom).offset(-5)
         }
+        
+        
         
     }
 

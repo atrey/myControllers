@@ -84,8 +84,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-myControllers/Alamofire.framework"
+  install_framework "Pods-myControllers/Argo.framework"
+  install_framework "Pods-myControllers/Curry.framework"
+  install_framework "Pods-myControllers/Firebase.framework"
+  install_framework "Pods-myControllers/SDWebImage.framework"
+  install_framework "Pods-myControllers/SVProgressHUD.framework"
   install_framework "Pods-myControllers/SnapKit.framework"
+  install_framework "Pods-myControllers/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-myControllers/Alamofire.framework"
+  install_framework "Pods-myControllers/Argo.framework"
+  install_framework "Pods-myControllers/Curry.framework"
+  install_framework "Pods-myControllers/Firebase.framework"
+  install_framework "Pods-myControllers/SDWebImage.framework"
+  install_framework "Pods-myControllers/SVProgressHUD.framework"
   install_framework "Pods-myControllers/SnapKit.framework"
+  install_framework "Pods-myControllers/SwiftyJSON.framework"
 fi

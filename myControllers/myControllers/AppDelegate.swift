@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,12 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         
+
+        
+        
+        
         let mainController = ViewController()
         let navigationController = UINavigationController(rootViewController: mainController)
         
         mainController.title = "Events"
         navigationController.tabBarItem = UITabBarItem(title: "Events", image: UIImage(named: "calendar"), tag: 0)
         
+            
         
         UINavigationBar.appearance().translucent = false
         
@@ -43,10 +49,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "contacts"), tag: 0)
         
         
+        let mapController = MapViewController()
+        let mapNavigationController = UINavigationController(rootViewController: mapController)
+        mapController.title = "Map"
+        mapNavigationController.tabBarItem = UITabBarItem(title: "Map", image: UIImage(named: "map"), tag: 0)
+        
+        
         
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [navigationController, profileNavigationController    ]
+        tabBarController.viewControllers = [navigationController, messagesNavigationController, profileNavigationController, mapNavigationController]
         
         
         

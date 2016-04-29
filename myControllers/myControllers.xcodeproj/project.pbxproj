@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A8236F8E33B89AE01BFD279 /* Pods_myControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2C4D4559FAB1B0A2271881 /* Pods_myControllers.framework */; };
+		E932D02E1CCD508F0097F36D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E932D02D1CCD508F0097F36D /* Model.swift */; };
 		E9452C921CB696EF004B2309 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C911CB696EF004B2309 /* MessagesViewController.swift */; };
 		E9452C941CB696F9004B2309 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C931CB696F9004B2309 /* FriendsViewController.swift */; };
 		E9452C961CB69701004B2309 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9452C951CB69701004B2309 /* ProfileViewController.swift */; };
@@ -18,11 +19,16 @@
 		E9D38CA31CB687EA00DBC998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D38CA11CB687EA00DBC998 /* Main.storyboard */; };
 		E9D38CA51CB687EA00DBC998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D38CA41CB687EA00DBC998 /* Assets.xcassets */; };
 		E9D38CA81CB687EA00DBC998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D38CA61CB687EA00DBC998 /* LaunchScreen.storyboard */; };
+		E9D4CCA81CC038750074FED9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4CCA71CC038750074FED9 /* TableViewCell.swift */; };
+		E9E002111CD1564500E34353 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E002101CD1564500E34353 /* MapViewController.swift */; };
+		E9E002131CD158B200E34353 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E002121CD158B200E34353 /* MapKit.framework */; };
+		E9E002151CD158ED00E34353 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E002141CD158ED00E34353 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04936118497AD1209E0FE016 /* Pods-myControllers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myControllers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myControllers/Pods-myControllers.debug.xcconfig"; sourceTree = "<group>"; };
 		8E2C4D4559FAB1B0A2271881 /* Pods_myControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E932D02D1CCD508F0097F36D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E9452C911CB696EF004B2309 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		E9452C931CB696F9004B2309 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E9452C951CB69701004B2309 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,10 @@
 		E9D38CA41CB687EA00DBC998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D38CA71CB687EA00DBC998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9D38CA91CB687EA00DBC998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D4CCA71CC038750074FED9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E9E002101CD1564500E34353 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E9E002121CD158B200E34353 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9E002141CD158ED00E34353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5DD740AC09E109CDA6A1EB1 /* Pods-myControllers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myControllers.release.xcconfig"; path = "Pods/Target Support Files/Pods-myControllers/Pods-myControllers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E002151CD158ED00E34353 /* CoreLocation.framework in Frameworks */,
+				E9E002131CD158B200E34353 /* MapKit.framework in Frameworks */,
 				5A8236F8E33B89AE01BFD279 /* Pods_myControllers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +65,8 @@
 		5322DBFAE492917387F1E98A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9E002141CD158ED00E34353 /* CoreLocation.framework */,
+				E9E002121CD158B200E34353 /* MapKit.framework */,
 				8E2C4D4559FAB1B0A2271881 /* Pods_myControllers.framework */,
 			);
 			name = Frameworks;
@@ -65,6 +79,14 @@
 				F5DD740AC09E109CDA6A1EB1 /* Pods-myControllers.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E932D02C1CCD50690097F36D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E932D02D1CCD508F0097F36D /* Model.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E9D38C911CB687EA00DBC998 = {
@@ -89,12 +111,15 @@
 			isa = PBXGroup;
 			children = (
 				E9D38C9D1CB687EA00DBC998 /* AppDelegate.swift */,
+				E9E002101CD1564500E34353 /* MapViewController.swift */,
 				E9D38C9F1CB687EA00DBC998 /* ViewController.swift */,
 				E9452C991CBD2D63004B2309 /* AddEventController.swift */,
 				E9452C971CBAD766004B2309 /* EventInfoModal.swift */,
 				E9452C911CB696EF004B2309 /* MessagesViewController.swift */,
+				E9D4CCA71CC038750074FED9 /* TableViewCell.swift */,
 				E9452C931CB696F9004B2309 /* FriendsViewController.swift */,
 				E9452C951CB69701004B2309 /* ProfileViewController.swift */,
+				E932D02C1CCD50690097F36D /* Model */,
 				E9D38CA11CB687EA00DBC998 /* Main.storyboard */,
 				E9D38CA41CB687EA00DBC998 /* Assets.xcassets */,
 				E9D38CA61CB687EA00DBC998 /* LaunchScreen.storyboard */,
@@ -139,6 +164,11 @@
 					E9D38C991CB687EA00DBC998 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = J8PG6Y9LTZ;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -227,11 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9452C9A1CBD2D63004B2309 /* AddEventController.swift in Sources */,
+				E9D4CCA81CC038750074FED9 /* TableViewCell.swift in Sources */,
 				E9452C981CBAD766004B2309 /* EventInfoModal.swift in Sources */,
+				E9E002111CD1564500E34353 /* MapViewController.swift in Sources */,
 				E9452C941CB696F9004B2309 /* FriendsViewController.swift in Sources */,
 				E9452C921CB696EF004B2309 /* MessagesViewController.swift in Sources */,
 				E9452C961CB69701004B2309 /* ProfileViewController.swift in Sources */,
 				E9D38CA01CB687EA00DBC998 /* ViewController.swift in Sources */,
+				E932D02E1CCD508F0097F36D /* Model.swift in Sources */,
 				E9D38C9E1CB687EA00DBC998 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
